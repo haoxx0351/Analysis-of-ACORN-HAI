@@ -56,7 +56,7 @@ For details on specific variables, refer to the [data directory](https://docs.go
 ---
 
 ### Baseline Characteristics 
-To analyze baseline characteristics, run the `table_baseline.R` script.  
+To analyze baseline characteristics, run the `descriptive_analysis/table_baseline.R` script.  
 The output table will be saved in the `output/table/` folder.
 
 ---
@@ -65,23 +65,23 @@ The output table will be saved in the `output/table/` folder.
 
 #### Preparing Data
 To prepare the data for plotting, run the following scripts:
-- `data_for_plot_1.R`
-- `data_for_plot_2.R`
+- `descriptive_analysis/data_for_plot_1.R`
+- `descriptive_analysis/data_for_plot_2.R`
 
 #### Stacked Charts
-Run the `stacked_charts_ast.R` script to generate stacked charts showing the proportions of AST results by antibiotic class for the index episode.
+Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of AST results by antibiotic class for the index episode.
 
 #### Pie Charts 
-Run the `pie_charts_ast.R` script to create pie charts displaying the proportions of AST results by antibiotics for the index episode.
+Run the `descriptive_analysis/pie_charts_ast.R` script to create pie charts displaying the proportions of AST results by antibiotics for the index episode.
 
 #### Heatmap
-Run the `heatmap_ast.R` script to generate a heatmap of resistant organism proportions for the index episode.
+Run the `descriptive_analysis/heatmap_ast.R` script to generate a heatmap of resistant organism proportions for the index episode.
 
 #### Antibiotic Resistance Profiles
-Run the `amr_profiles.R` script to visualize antibiotic resistance profiles across different infection types.
+Run the `descriptive_analysis/amr_profiles.R` script to visualize antibiotic resistance profiles across different infection types.
 
 #### Sankey Diagram
-Run the `sankey.R` script to illustrate the transition from empirical to definitive antibiotic prescriptions.
+Run the `descriptive_analysis/sankey.R` script to illustrate the transition from empirical to definitive antibiotic prescriptions.
 
 **Note:** All figures will be saved in the `output/figure/` folder.
 
