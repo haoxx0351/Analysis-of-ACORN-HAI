@@ -29,7 +29,7 @@ The raw data for this analysis is managed using **REDCap**. Download the require
 
 ---
 
-### Cleaning the data
+### Cleaning raw data
 
 #### Step 1: Place raw data
 Store the raw data files in the following directory: `data/raw_data/`. Import the data files (F01, F02, F03, F04, F07a, F07b, F07c, F07d, F07e, F07m) sequentially.
