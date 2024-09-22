@@ -78,7 +78,7 @@ Run the `pie_charts_ast.R` script to create pie charts displaying the proportion
 Run the `heatmap_ast.R` script to generate a heatmap of resistant organism proportions for the index episode.
 
 #### Antibiotic Resistance Profiles
-Run the `am_profiles.R` script to visualize antibiotic resistance profiles across different infection types.
+Run the `amr_profiles.R` script to visualize antibiotic resistance profiles across different infection types.
 
 #### Sankey Diagram
 Run the `sankey.R` script to illustrate the transition from empirical to definitive antibiotic prescriptions.
