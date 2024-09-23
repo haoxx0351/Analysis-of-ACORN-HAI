@@ -4,11 +4,11 @@
 
 ## Introduction
 
-The ACORN-HAI study is a prospective cohort initiated in September 2022 and scheduled to conclude in December 2024, with data for this interim analysis updated as of April 26, 2024. The study aims to establish a large-scale, multi-center patient-centered surveillance network focused on antimicrobial resistance in severe healthcare-associated infections. Additionally, it serves as a foundation for future interventional clinical trials targeting multidrug-resistant infections. This includes building the capacity of microbiology laboratories and developing robust data collection and sharing platforms.
+ACORN-HAI study is a prospective cohort conducted from September 2022 to December 2024, with data for the interim analysis updated until April 26, 2024. The study aims to create a large-scale, multi-center, patient-centered surveillance network focused on antimicrobial resistance in severe healthcare-associated infections. It also lays the groundwork for future interventional clinical trials targeting multidrug-resistant infections by building microbiology laboratory capacity and developing robust data collection and sharing platforms.
 
 For further details, please refer to the interim analysis report.
 
-In this README, we guide you through the interim analysis of the ACORN-HAI cohort using R. The guide covers baseline characteristics, microbiology data, and antibiotic usage, alongside explanations, code examples, and the implications of each component.
+This README provides a step-by-step guide for conducting the interim analysis of the ACORN-HAI cohort using R. It covers key aspects such as baseline characteristics, antibiotic resistance, clinical outcomes, and antibiotic prescriptions, particularly highlighting **Carbapenem-resistant *Acinetobacter* (CRA)**, **Third-generation cephalosporin-resistant *Enterobacterales* (3GCRE)**, and **Carbapenem-resistant *Enterobacterales* (CRE)**. Throughout the guide, you will find explanations, code examples, and the implications of each component.
 
 ---
 
@@ -17,15 +17,21 @@ In this README, we guide you through the interim analysis of the ACORN-HAI cohor
 ### Preparation
 
 #### Step 1: Install R and RStudio
-Ensure that **R** and **RStudio** are installed on your computer:
+Make sure **R** and **RStudio** are installed on your computer:
 
 - Download R from: [https://cran.r-project.org/](https://cran.r-project.org/)
 - Download RStudio from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
 
-#### Step 2: Download raw data
-The raw data for this analysis is managed using **REDCap**. Download the required data files from REDCap. If you encounter any issues, please contact **Sujie** at jiesu@nus.edu.sg.
+#### Step 2: Download the raw data
+The raw data for this analysis is managed via **REDCap**. To proceed:
+
+- Download the required data files from REDCap.
+- For any issues during the download process, please reach out to **Sujie** at jiesu@nus.edu.sg.
 
 **Important:** Do not modify the names of the raw data files.
+
+#### Step 3: Download and extract the code
+Go to the `<> Code` section and download the ZIP folder containing the scripts. Once downloaded, unzip the folder to access the necessary code files.
 
 ---
 
@@ -70,7 +76,7 @@ The output table will be saved in the `output/table/` folder.
 Run the `descriptive_analysis/proportion_infection_types.R` script to generate proportion of infection types across countries with total index episodes.
 
 #### Stacked charts
-Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of AST results by antibiotic class for the index episode.
+Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of  antimicrobial susceptibility test (AST) results by antibiotic class for the index episode.
 
 #### Pie charts 
 Run the `descriptive_analysis/pie_charts_ast.R` script to create pie charts displaying the proportions of AST results by antibiotics for the index episode.
@@ -81,26 +87,47 @@ Run the `descriptive_analysis/heatmap_ast.R` script to generate a heatmap of res
 #### Antibiotic resistance profiles
 Run the `descriptive_analysis/amr_profiles.R` script to visualize antibiotic resistance profiles across different infection types.
 
-#### Sankey 
+#### Prescriptions 
 Run the `descriptive_analysis/sankey.R` script to illustrate the transition from empirical to definitive antibiotic prescriptions.
 
 **Note:** All figures will be saved in the `output/figure/` folder.
 
 ---
 
-### Clinical Outcomes
+### Clinical outcomes
 
-#### All-Cause Mortality
-Open the `all_cause_mortality` folder, run all R scripts, and tables will be generated in the `all_cause_mortality/table/` directory, with figures in the `all_cause_mortality/figure/` directory.
+**Copy all `.RData` files from `data/clean_data_RData/` to:**
 
-#### All-Cause Readmission
-Open the `all_cause_readmission` folder, run all R scripts, and tables will be generated in the `all_cause_readmission/table/` directory, with figures in the `all_cause_readmission/figure/` directory.
+- `all_cause_mortality/data/clean data/`
+- `all_cause_readmission/data/clean data/`
+- `attributable_mortality/car_aci/data/clean data/`
+- `attributable_mortality/thir_ent/data/clean data/`
+- `attributable_mortality/car_ent/data/clean data/`
+- `excess_length_of_stay/data/clean data/`
 
-#### Attributable Mortality
-Open the `attributable_mortality` folder, which includes subfolders for **carbapenem-resistant *Acinetobacter* (car_aci)**, **third-generation cephalosporin-resistant *Enterobacterales* (thir_ent)**, and **carbapenem-resistant *Enterobacterales* (car_ent)**. Run all R scripts within each subfolder, and tables will be generated in the respective `table/` directories, with figures in the respective `figure/` directories.
+#### All-cause mortality
+- Open the `all_cause_mortality` folder.
+- Run all R scripts.
+- Tables and figures will be saved in `all_cause_mortality/table/` and `all_cause_mortality/figure/` directories.
 
-#### Excess Length of Stay
-Open the `excess_length_of_stay` folder, run all R scripts, and tables will be generated in the `excess_length_of_stay/table/` directory, with figures in the `excess_length_of_stay/figure/` directory.
+#### All-cause readmission
+- Open the `all_cause_readmission` folder.
+- Run all R scripts.
+- Tables and figures will be saved in `all_cause_readmission/table/` and `all_cause_readmission/figure/` directories.
+
+#### Attributable mortality
+- Open the `attributable_mortality` folder, which contains subfolders for:
+  - **CRA (car_aci)**
+  - **3GCRE (thir_ent)**
+  - **CRE (car_ent)**
+
+- Run all R scripts in each subfolder.
+- Tables and figures will be saved in the respective `table/` and `figure/` directories.
+
+#### Excess length of stay
+- Open the `excess_length_of_stay` folder.
+- Run all R scripts.
+- Tables and figures will be saved in `excess_length_of_stay/table/` and `excess_length_of_stay/figure/` directories.
 
 ---
 
