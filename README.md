@@ -6,7 +6,7 @@
 
 ACORN-HAI study is a prospective cohort conducted from September 2022 to December 2024, with data for the interim analysis updated until April 26, 2024. The study aims to create a large-scale, multi-center, patient-centered surveillance network focused on antimicrobial resistance in severe healthcare-associated infections. It also lays the groundwork for future interventional clinical trials targeting multidrug-resistant infections by building microbiology laboratory capacity and developing robust data collection and sharing platforms.
 
-For further details, please refer to the interim analysis report.
+For further details, please refer to the **interim analysis report**.
 
 This README provides a step-by-step guide for conducting the interim analysis of the ACORN-HAI cohort using R. It covers key aspects such as baseline characteristics, antibiotic resistance, clinical outcomes, and antibiotic prescriptions, particularly highlighting **Carbapenem-resistant *Acinetobacter* (CRA)**, **Third-generation cephalosporin-resistant *Enterobacterales* (3GCRE)**, and **Carbapenem-resistant *Enterobacterales* (CRE)**. Throughout the guide, you will find explanations, code examples, and the implications of each component.
 
@@ -57,7 +57,7 @@ After cleaning, the following nine Excel files will be available in the `data/cl
 
 For details on specific variables, refer to the [data directory](https://docs.google.com/spreadsheets/d/1qLqACtCwm7IUfF0Fh_TJnrfE94kV-5Dq_Cn5IjIzS9c/edit?gid=766714505#gid=766714505).
 
-**Note:** The cleaned data files are ready for use in SPSS, STATA, R, or other statistical software.
+**Note:** The cleaned data files are ready for analysis in SPSS, STATA, R, or other statistical software.
 
 ---
 
@@ -69,8 +69,7 @@ To prepare the data for plotting, run the following scripts:
 - `descriptive_analysis/data_for_plot_2.R`
 
 #### Baseline characteristics 
-To analyze baseline characteristics, run the `descriptive_analysis/table_baseline.R` script.  
-The output table will be saved in the `output/table/` folder.
+Run `descriptive_analysis/table_baseline.R` script to generate a baseline characteristics table.
 
 #### Proportion of infection types
 Run the `descriptive_analysis/proportion_infection_types.R` script to generate proportion of infection types across countries with total index episodes.
@@ -90,7 +89,7 @@ Run the `descriptive_analysis/amr_profiles.R` script to visualize antibiotic res
 #### Prescriptions 
 Run the `descriptive_analysis/sankey.R` script to illustrate the transition from empirical to definitive antibiotic prescriptions.
 
-**Note:** All figures will be saved in the `output/figure/` folder.
+**Note:** Tables are saved in `output/table/`, and figures in `output/figure/`.
 
 ---
 
@@ -107,12 +106,12 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
 
 #### All-cause mortality
 - Open the `all_cause_mortality` folder.
-- Run all R scripts.
+- Run the R scripts in numerical order.
 - Tables and figures will be saved in `all_cause_mortality/table/` and `all_cause_mortality/figure/` directories.
 
 #### All-cause readmission
 - Open the `all_cause_readmission` folder.
-- Run all R scripts.
+- Run the R scripts in numerical order.
 - Tables and figures will be saved in `all_cause_readmission/table/` and `all_cause_readmission/figure/` directories.
 
 #### Attributable mortality
@@ -121,12 +120,12 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
   - **3GCRE (thir_ent)**
   - **CRE (car_ent)**
 
-- Run all R scripts in each subfolder.
+- Run the numbered R scripts in order within each subfolder.
 - Tables and figures will be saved in the respective `table/` and `figure/` directories.
 
 #### Excess length of stay
 - Open the `excess_length_of_stay` folder.
-- Run all R scripts.
+- Run the R scripts in numerical order.
 - Tables and figures will be saved in `excess_length_of_stay/table/` and `excess_length_of_stay/figure/` directories.
 
 ---
