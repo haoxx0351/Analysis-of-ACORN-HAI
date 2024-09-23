@@ -46,14 +46,14 @@ Open the `clean_data.Rmd` file in RStudio, and click **Run All** to process and 
 #### Step 3: Output files
 After cleaning, the following nine Excel files will be available in the `data/clean_data_excel/` folder:
 
-- `infection_types_index`: Contains infection types for each patient.
-- `baseline_outcomes_index`: Baseline characteristics and outcomes.
-- `ast_all`: AST results for all episodes.
+- `infection_types_index`: Infection types for each patient.
+- `baseline_outcomes_index`: Baseline and outcome-related variables.
+- `ast_all`: Antimicrobial susceptibility test (AST) results for all episodes.
 - `ast_all_index`: AST results for the index episode.
-- `anti_treat_index`: Antibiotic usage during the index episode.
-- `all_vap_bsi`: Key variables for all episodes.
-- `vap_bsi_index`: Key variables for the index episode.
-- `df_ast` and `each_ast`: Prepared data for AST visualizations.
+- `anti_treat_index`: Antibiotic usage for the index episode.
+- `all_vap_bsi`: Relevant variables for all episodes.
+- `vap_bsi_index`: Relevant variables for the index episode.
+- `df_ast`; `each_ast`: Prepare data for AST visualizations.
 
 For details on specific variables, refer to the [data directory](https://docs.google.com/spreadsheets/d/1vjWEZeZuSjVBDFOE1_vwWC4YEVcdSkaDV3bWvFfXKLc/edit?gid=891995523#gid=891995523).
 
@@ -76,7 +76,7 @@ The output table will be saved in the `output/table/` folder.
 Run the `descriptive_analysis/proportion_infection_types.R` script to generate proportion of infection types across countries with total index episodes.
 
 #### Stacked charts
-Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of  antimicrobial susceptibility test (AST) results by antibiotic class for the index episode.
+Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of  AST results by antibiotic class for the index episode.
 
 #### Pie charts 
 Run the `descriptive_analysis/pie_charts_ast.R` script to create pie charts displaying the proportions of AST results by antibiotics for the index episode.
