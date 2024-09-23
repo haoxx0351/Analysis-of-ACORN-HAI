@@ -77,8 +77,11 @@ Run the `descriptive_analysis/proportion_infection_types.R` script to generate p
 #### Stacked charts
 Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of  AST results by antibiotic class for the index episodes.
 
-#### Pie charts 
-Run the `descriptive_analysis/pie_charts_ast.R` script to create pie charts displaying the proportions of AST results by antibiotics for the index episodes.
+#### Pie Charts
+Run the following scripts to create pie charts displaying the proportions of AST results by antibiotics for the index episodes:
+- `descriptive_analysis/pie_charts_ast_VAP.R` for VAP.
+- `descriptive_analysis/pie_charts_ast_BSI_hosp.R` for hospital-acquired BSI.
+- `descriptive_analysis/pie_charts_ast_BSI_health.R` for healthcare-associated BSI.
 
 #### Heatmap
 Run the `descriptive_analysis/heatmap_ast.R` script to generate a heatmap of resistant organism proportions for the index episodes.
@@ -89,7 +92,7 @@ Run the `descriptive_analysis/amr_profiles.R` script to visualize antibiotic res
 #### Prescriptions 
 Run the `descriptive_analysis/sankey.R` script to illustrate the transition from empirical to definitive antibiotic prescriptions.
 
-**Note:** Tables are saved in `output/table/`, and figures in `output/figure/`.
+**Note:** Tables are saved in `descriptive_analysis/output/table/`, and figures in `descriptive_analysis/output/figure/`.
 
 ---
 
