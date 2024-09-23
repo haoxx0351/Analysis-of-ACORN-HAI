@@ -49,24 +49,22 @@ After cleaning, the following nine Excel files will be available in the `data/cl
 - `vap_bsi_index`: Key variables for the index episode.
 - `df_ast` and `each_ast`: Prepared data for AST visualizations.
 
-For details on specific variables, refer to the [data directory](https://docs.google.com/spreadsheets/d/1jz6uLEr5W_TLF88tHTcc-DNK-3iql8Ji5GziOl9Hflg/edit?gid=510416900#gid=510416900).
+For details on specific variables, refer to the [data directory](https://docs.google.com/spreadsheets/d/1vjWEZeZuSjVBDFOE1_vwWC4YEVcdSkaDV3bWvFfXKLc/edit?gid=891995523#gid=891995523).
 
 **Note:** The cleaned data files are ready for use in SPSS, STATA, R, or other statistical software.
 
 ---
 
-### Baseline characteristics 
-To analyze baseline characteristics, run the `descriptive_analysis/table_baseline.R` script.  
-The output table will be saved in the `output/table/` folder.
+### Demographic characteristics and antibiotic resistance profiles
 
----
-
-### Data visualization
-
-#### Preparing data
+#### Preparing data for visualization
 To prepare the data for plotting, run the following scripts:
 - `descriptive_analysis/data_for_plot_1.R`
 - `descriptive_analysis/data_for_plot_2.R`
+
+#### Baseline characteristics 
+To analyze baseline characteristics, run the `descriptive_analysis/table_baseline.R` script.  
+The output table will be saved in the `output/table/` folder.
 
 #### Proportion of infection types
 Run the `descriptive_analysis/proportion_infection_types.R` script to generate proportion of infection types across countries with total index episodes.
@@ -87,6 +85,22 @@ Run the `descriptive_analysis/amr_profiles.R` script to visualize antibiotic res
 Run the `descriptive_analysis/sankey.R` script to illustrate the transition from empirical to definitive antibiotic prescriptions.
 
 **Note:** All figures will be saved in the `output/figure/` folder.
+
+---
+
+### Clinical Outcomes
+
+#### All-Cause Mortality
+Open the `all_cause_mortality` folder, run all R scripts, and tables will be generated in the `all_cause_mortality/table/` directory, with figures in the `all_cause_mortality/figure/` directory.
+
+#### All-Cause Readmission
+Open the `all_cause_readmission` folder, run all R scripts, and tables will be generated in the `all_cause_readmission/table/` directory, with figures in the `all_cause_readmission/figure/` directory.
+
+#### Attributable Mortality
+Open the `attributable_mortality` folder, which includes subfolders for **carbapenem-resistant *Acinetobacter* (car_aci)**, **third-generation cephalosporin-resistant *Enterobacterales* (thir_ent)**, and **carbapenem-resistant *Enterobacterales* (car_ent)**. Run all R scripts within each subfolder, and tables will be generated in the respective `table/` directories, with figures in the respective `figure/` directories.
+
+#### Excess Length of Stay
+Open the `excess_length_of_stay` folder, run all R scripts, and tables will be generated in the `excess_length_of_stay/table/` directory, with figures in the `excess_length_of_stay/figure/` directory.
 
 ---
 
