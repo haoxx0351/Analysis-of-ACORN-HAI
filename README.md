@@ -23,9 +23,9 @@ Make sure **R** and **RStudio** are installed on your computer:
 - Download RStudio from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
 
 #### Step 2: Download the raw data
-The raw data for this analysis is managed via **REDCap**. To proceed:
+The raw data is managed via **REDCap**. To proceed:
 
-- Download the required data files from REDCap.
+- Download the required raw data files from REDCap.
 - For any issues during the download process, please reach out to **Sujie** at jiesu@nus.edu.sg.
 
 **Important:** Do not modify the names of the raw data files.
@@ -49,13 +49,13 @@ After cleaning, the following nine Excel files will be available in the `data/cl
 - `infection_types_index`: Infection types for each patient.
 - `baseline_outcomes_index`: Baseline and outcome-related variables.
 - `ast_all`: Antimicrobial susceptibility test (AST) results for all episodes.
-- `ast_all_index`: AST results for the index episode.
-- `anti_treat_index`: Antibiotic usage for the index episode.
+- `ast_all_index`: AST results for the index episodes.
+- `anti_treat_index`: Antibiotic usage for the index episodes.
 - `all_vap_bsi`: Relevant variables for all episodes.
-- `vap_bsi_index`: Relevant variables for the index episode.
+- `vap_bsi_index`: Relevant variables for the index episodes.
 - `df_ast`; `each_ast`: Prepare data for AST visualizations.
 
-For details on specific variables, refer to the [data directory](https://docs.google.com/spreadsheets/d/1vjWEZeZuSjVBDFOE1_vwWC4YEVcdSkaDV3bWvFfXKLc/edit?gid=891995523#gid=891995523).
+For details on specific variables, refer to the [data directory](https://docs.google.com/spreadsheets/d/1qLqACtCwm7IUfF0Fh_TJnrfE94kV-5Dq_Cn5IjIzS9c/edit?gid=766714505#gid=766714505).
 
 **Note:** The cleaned data files are ready for use in SPSS, STATA, R, or other statistical software.
 
@@ -76,13 +76,13 @@ The output table will be saved in the `output/table/` folder.
 Run the `descriptive_analysis/proportion_infection_types.R` script to generate proportion of infection types across countries with total index episodes.
 
 #### Stacked charts
-Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of  AST results by antibiotic class for the index episode.
+Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of  AST results by antibiotic class for the index episodes.
 
 #### Pie charts 
-Run the `descriptive_analysis/pie_charts_ast.R` script to create pie charts displaying the proportions of AST results by antibiotics for the index episode.
+Run the `descriptive_analysis/pie_charts_ast.R` script to create pie charts displaying the proportions of AST results by antibiotics for the index episodes.
 
 #### Heatmap
-Run the `descriptive_analysis/heatmap_ast.R` script to generate a heatmap of resistant organism proportions for the index episode.
+Run the `descriptive_analysis/heatmap_ast.R` script to generate a heatmap of resistant organism proportions for the index episodes.
 
 #### Antibiotic resistance profiles
 Run the `descriptive_analysis/amr_profiles.R` script to visualize antibiotic resistance profiles across different infection types.
