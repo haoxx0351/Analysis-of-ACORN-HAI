@@ -37,8 +37,8 @@ Go to the `<> Code` section and download the ZIP folder containing the scripts. 
 
 ### Cleaning raw data
 
-#### Step 1: Place raw data
-Store the raw data files in the following directory: `data/raw_data/`. Import the data files (F01, F02, F03, F04, F07a, F07b, F07c, F07d, F07e, F07m) sequentially.
+#### Step 1: Set Up `data/raw_data/` for Data Cleaning
+Create a `raw_data` folder inside the `data` directory, then place the raw data files (F01, F02, F03, F04, F07a, F07b, F07c, F07d, F07e, F07m) in the folder. Ensure the files are in the correct order for data cleaning.
 
 #### Step 2: Run the data cleaning script
 Open the `clean_data.Rmd` file in RStudio, and click **Run All** to process and clean the raw data for analysis.
