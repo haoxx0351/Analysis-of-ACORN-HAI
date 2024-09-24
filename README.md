@@ -37,7 +37,9 @@ Go to the `<> Code` section and download the ZIP folder containing the scripts. 
 ### Cleaning raw data
 
 #### Step 1: Set up `data/raw_data/` and place the raw data
-Create a `raw_data` folder inside the `data` directory, then place the raw data files (F01, F02, F03, F04, F07a, F07b, F07c, F07d, F07e, F07m) in the folder. Ensure the files are in the correct order for data cleaning.
+Create a `raw_data` folder inside the `data` directory, then place the raw data files (F01, F02, F03, F04, F07a, F07b, F07c, F07d, F07e, F07m) in the folder. 
+
+**Important:** The order of the files is important because when raw data is imported into R, it is automatically labeled `data[[1]]`, `data[[2]]`, and so on. To make sure the data is cleaned correctly, **don't rename or change the order of the raw data files**.
 
 #### Step 2: Run the data cleaning script
 Open the `clean_data.Rmd` file in RStudio, and click **Run All** to process and clean the raw data for analysis.
@@ -62,10 +64,12 @@ For details on specific variables, refer to the [data directory](https://docs.go
 
 ### Demographic characteristics and antibiotic resistance profiles
 
-#### Preparing data for visualization
-To prepare the data for plotting, run the following scripts:
+#### Preparing Data for Visualization  
+To prepare the data for plotting, run the following scripts in your R environment:
 - `descriptive_analysis/data_for_plot_1.R`
 - `descriptive_analysis/data_for_plot_2.R`
+
+Each script will generate the data for plotting, with the output saved in `data/clean_data_RData`.
 
 #### Baseline characteristics 
 Run `descriptive_analysis/table_baseline.R` script to generate a baseline characteristics table.
@@ -108,12 +112,12 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
 
 #### All-cause mortality
 - Open the `all_cause_mortality` folder.
-- Run the R scripts in numerical order.
+- Run the R scripts step by step.
 - Tables and figures will be saved in `all_cause_mortality/table/` and `all_cause_mortality/figure/` directories.
 
 #### All-cause readmission
 - Open the `all_cause_readmission` folder.
-- Run the R scripts in numerical order.
+- Run the R scripts step by step.
 - Tables and figures will be saved in `all_cause_readmission/table/` and `all_cause_readmission/figure/` directories.
 
 #### Attributable mortality
@@ -122,12 +126,12 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
   - **3GCRE (thir_ent)**
   - **CRE (car_ent)**
 
-- Run the numbered R scripts in order within each subfolder.
+- Run the R scripts step by step within each subfolder.
 - Tables and figures will be saved in the respective `table/` and `figure/` directories.
 
 #### Excess length of stay
 - Open the `excess_length_of_stay` folder.
-- Run the R scripts in numerical order.
+- Run the R scripts step by step.
 - Tables and figures will be saved in `excess_length_of_stay/table/` and `excess_length_of_stay/figure/` directories.
 
 ---
