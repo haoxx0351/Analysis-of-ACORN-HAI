@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" width="250"/>
+  <img src="logo.png" width="230"/>
 </p>
 
 ---
@@ -24,7 +24,7 @@ Make sure **R** and **RStudio** are installed on your computer:
 - Download RStudio from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
 
 #### Step 2: Download the raw data
-Request for raw REDCap data files from **Sujie** at jiesu@nus.edu.sg.
+Request for raw REDCap data files from **Sujie** (jiesu@nus.edu.sg).
 
 **Important:** Do not modify the names of the raw data files.
 
@@ -67,7 +67,7 @@ To prepare the data for plotting, run the following scripts in your R environmen
 - `descriptive_analysis/data_for_plot_1.R`
 - `descriptive_analysis/data_for_plot_2.R`
 
-Each script will generate the data for plotting, with the output saved in `data/clean_data_RData`.
+Each script will generate the data for plotting, with the output saved in `data/clean_data_RData/`.
 
 #### Baseline characteristics 
 Run `descriptive_analysis/table_baseline.R` script to generate a baseline characteristics table.
@@ -134,6 +134,6 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
 ---
 
 ### Troubleshooting
-For any issues with code execution, please contact Xinxin at xx_hao@nus.edu.sg.
+For any issues with code execution, please contact Xinxin (xx_hao@nus.edu.sg).
 
 --- 
