@@ -1,12 +1,14 @@
+<p align="center">
+  <img src="logo.png" width="200"/>
+</p>
+
 ---
 
-# README: ACORN-HAI Interim Analysis Guide
+# README: ACORN-HAI Analysis Guide
 
 ## Introduction
 
 ACORN-HAI study is a prospective cohort conducted from September 2022 to December 2024, with data for the interim analysis updated until April 26, 2024. The study aims to create a large-scale, multi-center, patient-centered surveillance network focused on antimicrobial resistance in severe healthcare-associated infections. It also lays the groundwork for future interventional clinical trials targeting multidrug-resistant infections by building microbiology laboratory capacity and developing robust data collection and sharing platforms.
-
-For further details, please refer to the **interim analysis report**.
 
 This README provides a step-by-step guide for conducting the interim analysis of the ACORN-HAI cohort using R. It covers key aspects such as baseline characteristics, antibiotic resistance, clinical outcomes, and antibiotic prescriptions, particularly highlighting **Carbapenem-resistant *Acinetobacter* (CRA)**, **Third-generation cephalosporin-resistant *Enterobacterales* (3GCRE)**, and **Carbapenem-resistant *Enterobacterales* (CRE)**. Throughout the guide, you will find explanations, code examples, and the implications of each component.
 
@@ -23,10 +25,7 @@ Make sure **R** and **RStudio** are installed on your computer:
 - Download RStudio from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
 
 #### Step 2: Download the raw data
-The raw data is managed via **REDCap**. To proceed:
-
-- Download the required raw data files from REDCap.
-- For any issues during the download process, please reach out to **Sujie** at jiesu@nus.edu.sg.
+Request for raw REDCap data files from **Sujie** at jiesu@nus.edu.sg.
 
 **Important:** Do not modify the names of the raw data files.
 
