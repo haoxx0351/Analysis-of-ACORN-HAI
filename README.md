@@ -112,28 +112,28 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
 
 #### Preparing data for analysis
 1. **Create `data/` folder** in the following directories:
-   - `all_cause_mortality/`
-   - `all_cause_readmission/`
-   - `attributable_mortality/car_aci/`
-   - `attributable_mortality/thir_ent/`
-   - `attributable_mortality/car_ent/`
-   - `excess_length_of_stay/`
+   - `outcome_all_cause_mortality/`
+   - `outcome_all_cause_readmission/`
+   - `outcome_attributable_mortality/car_aci/`
+   - `outcome_attributable_mortality/thir_ent/`
+   - `outcome_attributable_mortality/car_ent/`
+   - `outcome_excess_length_of_stay/`
 
 2. **Copy and paste**:
    - Copy the entire `data/clean_data_RData/` folder and paste it inside each of the directories listed above.
 
 #### All-cause mortality
-- Open the `all_cause_mortality` folder.
+- Open the `outcome_all_cause_mortality` folder.
 - Run the R scripts step by step.
-- Tables and figures will be saved in `all_cause_mortality/output/table/` and `all_cause_mortality/output/figure/` directories.
+- Tables and figures will be saved in `outcome_all_cause_mortality/output/table/` and `outcome_all_cause_mortality/output/figure/` directories.
 
 #### All-cause readmission
-- Open the `all_cause_readmission` folder.
+- Open the `outcome_all_cause_readmission` folder.
 - Run the R scripts step by step.
-- Tables and figures will be saved in `all_cause_readmission/out/table/` and `all_cause_readmission/output/figure/` directories.
+- Tables and figures will be saved in `outcome_all_cause_readmission/out/table/` and `outcome_all_cause_readmission/output/figure/` directories.
 
 #### Attributable mortality
-- Open the `attributable_mortality` folder, which contains subfolders for:
+- Open the `outcome_attributable_mortality` folder, which contains subfolders for:
   - **CRA (car_aci)**
   - **3GCRE (thir_ent)**
   - **CRE (car_ent)**
@@ -142,13 +142,11 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
 - Tables and figures will be saved in the respective `output/table/` and `output/figure/` directories.
 
 #### Excess length of stay
-- Open the `excess_length_of_stay` folder.
+- Open the `outcome_excess_length_of_stay` folder.
 - Run the R scripts step by step.
-- Tables and figures will be saved in `excess_length_of_stay/output/table/` and `excess_length_of_stay/output/figure/` directories.
+- Tables and figures will be saved in `outcome_excess_length_of_stay/output/table/` and `outcome_excess_length_of_stay/output/figure/` directories.
 
 ---
 
 ### Troubleshooting
 For any issues with code execution, please contact Xinxin (xx_hao@nus.edu.sg).
-
---- 
