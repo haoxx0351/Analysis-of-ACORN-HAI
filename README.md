@@ -36,23 +36,34 @@ Go to the `<> Code` section and download the ZIP folder containing the scripts. 
 ### Cleaning raw data
 
 #### Step 1: Set up `data/raw_data/` and place the raw data
-Create a `raw_data` folder inside the `data` directory, then place the raw data files (F01, F02, F03, F04, F07a, F07b, F07c, F07d, F07e, F07m) in the folder.
+**Create `raw_data`** folder inside the `data` directory, then place the raw data files (F01, F02, F03, F04, F07a, F07b, F07c, F07d, F07e, F07m) in the folder.
 
 **Important:** Renaming the raw data files will change their order when imported into R, as they are automatically labeled `data[[1]]`, `data[[2]]`, etc. This can disrupt the data cleaning process. **Do not rename the raw data files.**
 
-#### Step 2: Run the data cleaning script
+#### Step 2: Set up `data/clean_data_excel/` and `data/clean_data_RData/`
+
+1. **Create directories**:
+   - Inside `data/`, add `clean_data_excel` for Excel files and `clean_data_RData` for RData files.
+
+2. **Directory structure**:
+   ```
+   data/
+   ├── clean_data_excel/
+   └── clean_data_RData/
+   ```
+#### Step 3: Run the data cleaning script
 Open the `clean_data.Rmd` file in RStudio, and click **Run All** to process and clean the raw data for analysis.
 
-#### Step 3: Output files
+#### Step 4: Output files
 After cleaning, the following nine Excel files will be available in the `data/clean_data_excel/` folder:
-- `infection_types_index`: Infection types for each patient.
-- `baseline_outcomes_index`: Baseline and outcome-related variables.
-- `ast_all`: Antimicrobial susceptibility test (AST) results for all episodes.
-- `ast_all_index`: AST results for the index episodes.
-- `anti_treat_index`: Antibiotic usage for the index episodes.
-- `all_vap_bsi`: Relevant variables for all episodes.
-- `vap_bsi_index`: Relevant variables for the index episodes.
-- `df_ast`; `each_ast`: Prepare data for AST visualizations.
+  - `infection_types_index`: Infection types for each patient.
+  - `baseline_outcomes_index`: Baseline and outcome-related variables.
+  - `ast_all`: Antimicrobial susceptibility test (AST) results for all episodes.
+  - `ast_all_index`: AST results for the index episodes.
+  - `anti_treat_index`: Antibiotic usage for the index episodes.
+  - `all_vap_bsi`: Relevant variables for all episodes.
+  - `vap_bsi_index`: Relevant variables for the index episodes.
+  - `df_ast`; `each_ast`: Prepare data for AST visualizations.
 
 For details on specific variables, refer to the [data directory](https://docs.google.com/spreadsheets/d/1qLqACtCwm7IUfF0Fh_TJnrfE94kV-5Dq_Cn5IjIzS9c/edit?gid=766714505#gid=766714505).
 
@@ -62,10 +73,10 @@ For details on specific variables, refer to the [data directory](https://docs.go
 
 ### Demographic characteristics and antibiotic resistance profiles
 
-#### Preparing Data for Visualization  
+#### Preparing data for visualization  
 To prepare the data for plotting, run the following scripts in your R environment:
-- `descriptive_analysis/data_for_plot_1.R`
-- `descriptive_analysis/data_for_plot_2.R`
+  - `descriptive_analysis/data_for_plot_1.R`
+  - `descriptive_analysis/data_for_plot_2.R`
 
 Each script will generate the data for plotting, with the output saved in `data/clean_data_RData/`.
 
@@ -78,11 +89,11 @@ Run the `descriptive_analysis/proportion_infection_types.R` script to generate p
 #### Stacked charts
 Run the `descriptive_analysis/stacked_charts_ast.R` script to generate stacked charts showing the proportions of  AST results by antibiotic class for the index episodes.
 
-#### Pie Charts
+#### Pie charts
 Run the following scripts to create pie charts displaying the proportions of AST results by antibiotics for the index episodes:
-- `descriptive_analysis/pie_charts_ast_VAP.R` for VAP.
-- `descriptive_analysis/pie_charts_ast_BSI_hosp.R` for hospital-acquired BSI.
-- `descriptive_analysis/pie_charts_ast_BSI_health.R` for healthcare-associated BSI.
+  - `descriptive_analysis/pie_charts_ast_VAP.R` for VAP.
+  - `descriptive_analysis/pie_charts_ast_BSI_hosp.R` for hospital-acquired BSI.
+  - `descriptive_analysis/pie_charts_ast_BSI_health.R` for healthcare-associated BSI.
 
 #### Heatmap
 Run the `descriptive_analysis/heatmap_ast.R` script to generate a heatmap of resistant organism proportions for the index episodes.
@@ -99,23 +110,27 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
 
 ### Clinical outcomes
 
-**Copy all `.RData` files from `data/clean_data_RData/` to:**
-- `all_cause_mortality/data/clean data/`
-- `all_cause_readmission/data/clean data/`
-- `attributable_mortality/car_aci/data/clean data/`
-- `attributable_mortality/thir_ent/data/clean data/`
-- `attributable_mortality/car_ent/data/clean data/`
-- `excess_length_of_stay/data/clean data/`
+#### Preparing data for analysis
+1. **Create `data/` folder** in the following directories:
+   - `all_cause_mortality/`
+   - `all_cause_readmission/`
+   - `attributable_mortality/car_aci/`
+   - `attributable_mortality/thir_ent/`
+   - `attributable_mortality/car_ent/`
+   - `excess_length_of_stay/`
+
+2. **Copy and paste**:
+   - Copy the entire `data/clean_data_RData/` folder and paste it inside each of the directories listed above.
 
 #### All-cause mortality
 - Open the `all_cause_mortality` folder.
 - Run the R scripts step by step.
-- Tables and figures will be saved in `all_cause_mortality/table/` and `all_cause_mortality/figure/` directories.
+- Tables and figures will be saved in `all_cause_mortality/output/table/` and `all_cause_mortality/output/figure/` directories.
 
 #### All-cause readmission
 - Open the `all_cause_readmission` folder.
 - Run the R scripts step by step.
-- Tables and figures will be saved in `all_cause_readmission/table/` and `all_cause_readmission/figure/` directories.
+- Tables and figures will be saved in `all_cause_readmission/out/table/` and `all_cause_readmission/output/figure/` directories.
 
 #### Attributable mortality
 - Open the `attributable_mortality` folder, which contains subfolders for:
@@ -124,12 +139,12 @@ Run the `descriptive_analysis/sankey.R` script to illustrate the transition from
   - **CRE (car_ent)**
 
 - Run the R scripts step by step within each subfolder.
-- Tables and figures will be saved in the respective `table/` and `figure/` directories.
+- Tables and figures will be saved in the respective `output/table/` and `output/figure/` directories.
 
 #### Excess length of stay
 - Open the `excess_length_of_stay` folder.
 - Run the R scripts step by step.
-- Tables and figures will be saved in `excess_length_of_stay/table/` and `excess_length_of_stay/figure/` directories.
+- Tables and figures will be saved in `excess_length_of_stay/output/table/` and `excess_length_of_stay/output/figure/` directories.
 
 ---
 
