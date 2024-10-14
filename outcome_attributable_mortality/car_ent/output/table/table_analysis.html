@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<div id="cirnztgtgb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  <style>#cirnztgtgb table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#cirnztgtgb thead, #cirnztgtgb tbody, #cirnztgtgb tfoot, #cirnztgtgb tr, #cirnztgtgb td, #cirnztgtgb th {
+  border-style: none;
+}
+
+#cirnztgtgb p {
+  margin: 0;
+  padding: 0;
+}
+
+#cirnztgtgb .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#cirnztgtgb .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cirnztgtgb .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cirnztgtgb .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2.5px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 2.5px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cirnztgtgb .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cirnztgtgb .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cirnztgtgb .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cirnztgtgb .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2.5px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cirnztgtgb .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#cirnztgtgb .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#cirnztgtgb .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cirnztgtgb .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cirnztgtgb .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cirnztgtgb .gt_row {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  border-top-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cirnztgtgb .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cirnztgtgb .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#cirnztgtgb .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#cirnztgtgb .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#cirnztgtgb .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cirnztgtgb .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#cirnztgtgb .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cirnztgtgb .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cirnztgtgb .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cirnztgtgb .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cirnztgtgb .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cirnztgtgb .gt_left {
+  text-align: left;
+}
+
+#cirnztgtgb .gt_center {
+  text-align: center;
+}
+
+#cirnztgtgb .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cirnztgtgb .gt_font_normal {
+  font-weight: normal;
+}
+
+#cirnztgtgb .gt_font_bold {
+  font-weight: bold;
+}
+
+#cirnztgtgb .gt_font_italic {
+  font-style: italic;
+}
+
+#cirnztgtgb .gt_super {
+  font-size: 65%;
+}
+
+#cirnztgtgb .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#cirnztgtgb .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#cirnztgtgb .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#cirnztgtgb .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#cirnztgtgb .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#cirnztgtgb .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#cirnztgtgb .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+  <table class="gt_table" style="table-layout: fixed;; width: 0px" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <colgroup>
+    <col style="width:260px;"/>
+    <col style="width:150px;"/>
+    <col style="width:90px;"/>
+    <col style="width:170px;"/>
+    <col style="width:90px;"/>
+    <col style="width:170px;"/>
+    <col style="width:90px;"/>
+    <col style="width:170px;"/>
+    <col style="width:90px;"/>
+  </colgroup>
+  <thead>
+    <tr class="gt_col_headings gt_spanner_row">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" style="font-family: Poppins; text-align: left; vertical-align: middle; font-size: 14px; font-weight: bold;" scope="col" id="Characteristics">Characteristics</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="colgroup" id="&lt;strong&gt;&lt;span style = 'color:black;'&gt;Univariable analysis&lt;/span&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/strong&gt;">
+        <span class="gt_column_spanner"><strong><span style = 'color:black;'>Univariable analysis</span><sup>[1]</sup></strong></span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="colgroup" id="&lt;strong&gt;&lt;span style = 'color:black;'&gt;Multivariable analysis&lt;/span&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/strong&gt;">
+        <span class="gt_column_spanner"><strong><span style = 'color:black;'>Multivariable analysis</span><sup>[1]</sup></strong></span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="colgroup" id="&lt;strong&gt;&lt;span style = 'color:black;'&gt;Multivariable analysis&lt;/span&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/strong&gt;">
+        <span class="gt_column_spanner"><strong><span style = 'color:black;'>Multivariable analysis</span><sup>[1]</sup></strong></span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="colgroup" id="&lt;strong&gt;&lt;span style = 'color:black;'&gt;Multivariable analysis&lt;/span&gt;&lt;sup&gt;[1,2]&lt;/sup&gt;&lt;/strong&gt;">
+        <span class="gt_column_spanner"><strong><span style = 'color:black;'>Multivariable analysis</span><sup>[1,2]</sup></strong></span>
+      </th>
+    </tr>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="Crude HR (95%CI)">Crude HR (95%CI)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="&lt;em&gt;p&lt;/em&gt;"><em>p</em></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="Adjusted HR (95%CI)">Adjusted HR (95%CI)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="&lt;em&gt;p&lt;/em&gt;"><em>p</em></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="Adjusted HR (95%CI)">Adjusted HR (95%CI)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="&lt;em&gt;p&lt;/em&gt;"><em>p</em></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="Adjusted HR (95%CI)">Adjusted HR (95%CI)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="font-family: Poppins; font-size: 14px; font-weight: bold;" scope="col" id="&lt;em&gt;p&lt;/em&gt;"><em>p</em></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Age</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.012 (1.007-1.017)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.012 (1.007-1.018)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.012 (1.007-1.017)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.012 (1.007-1.017)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Sex</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Female</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Male</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.019 (0.791-1.314)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.882</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.969 (0.759-1.238)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.803</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.959 (0.754-1.220)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.735</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.942 (0.739-1.199)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.626</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Region</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Eastern Mediterranean Region</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">South-East Asian Region</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.281 (0.765-2.143)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.346</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">2.040 (1.140-3.650)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.05</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.718 (0.971-3.038)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.063</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Western Pacific Region</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.516 (0.307-0.869)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.05</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.212 (0.669-2.195)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.526</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.032 (0.577-1.847)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.915</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">World Bank income status</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">High income</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Upper middle income</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">2.244 (1.538-3.273)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.126 (0.750-1.689)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.568</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.096 (0.730-1.645)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.658</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.434 (0.982-2.092)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.062</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Lower middle income</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">2.965 (1.931-4.554)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">2.028 (1.242-3.312)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.01</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.883 (1.157-3.063)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.05</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">2.132 (1.372-3.313)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Low income</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.732 (0.951-3.154)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.073</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.698 (0.358-1.365)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.294</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.648 (0.334-1.260)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.201</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.009 (0.542-1.876)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.979</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Primary admission reason</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Infectious disease</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Cardiovascular condition</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.539 (0.853-2.777)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.152</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.392 (0.795-2.438)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.247</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Gastrointestinal disorder</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.962 (0.591-1.565)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.875</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.836 (0.518-1.349)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.462</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Haematological disease</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.582 (0.247-1.369)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.215</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.023 (0.442-2.369)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.958</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Neurological disease</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.928 (0.555-1.554)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.777</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.883 (0.545-1.431)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.614</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Oncologic disorder</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.599 (0.363-0.990)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.05</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.781 (0.475-1.286)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.332</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Orthopaedic condition</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.156 (0.399-3.351)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.790</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.105 (0.407-3.000)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.845</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Pulmonary disease</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">2.143 (1.379-3.331)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.350 (0.890-2.048)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.158</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Renal disorder</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.104 (0.609-2.003)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.744</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.035 (0.577-1.857)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.908</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Trauma</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.132 (0.618-2.075)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.688</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.960 (0.546-1.689)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.887</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Others</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.098 (0.716-1.683)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.669</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.471 (0.964-2.246)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.074</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Charlson comorbidity index</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.001 (0.934-1.073)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.973</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Severity score of disease</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.196 (1.156-1.237)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.128 (1.088-1.170)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.136 (1.096-1.177)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.144 (1.104-1.186)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">ICU/HD admissions of enrolment</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">No</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Yes</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">2.181 (1.682-2.828)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.377 (1.045-1.816)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.05</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.467 (1.125-1.913)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.01</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.455 (1.114-1.900)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.01</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Type of pathogens</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Monomicrobial</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Polymicrobial</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.950 (1.455-2.615)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">1.302 (0.991-1.711)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">0.058</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-weight: bold; font-size: 14px;">Enterobacterales</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"><br /></td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;"></td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="font-family: Poppins; font-size: 14px;">Carbapenem-susceptible</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_uni" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">Ref</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="font-family: Poppins; font-size: 14px;">—</td></tr>
+    <tr><td headers="Characteristics" class="gt_row gt_left" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">Carbapenem-resistant</td>
+<td headers="Crude HR (95%CI)_uni" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">3.083 (2.351-4.042)</td>
+<td headers="P value_uni" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_1" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">1.754 (1.328-2.317)</td>
+<td headers="P value_multi_1" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_2" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">1.827 (1.387-2.405)</td>
+<td headers="P value_multi_2" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">&lt;0.001</td>
+<td headers="Adjusted HR (95%CI)_multi_3" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">2.060 (1.575-2.695)</td>
+<td headers="P value_multi_3" class="gt_row gt_center" style="border-bottom-width: 2.5px; border-bottom-style: solid; border-bottom-color: black; font-family: Poppins; font-size: 14px;">&lt;0.001</td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" style="font-family: Poppins; font-size: 12px;" colspan="9">Note: [1] stratified by infection syndromes, [2] final model.</td>
+    </tr>
+    <tr>
+      <td class="gt_sourcenote" style="font-family: Poppins; font-size: 12px;" colspan="9">Abbreviations: HR = Hazard Ratio, CI = Confidence Interval.</td>
+    </tr>
+  </tfoot>
+  
+</table>
+</div>
+</body>
+</html>
